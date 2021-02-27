@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>YouTube Thumbnails Overview Generator</title>
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <base target="_blank">
+  <style>
+    body { background-color: silver; }
+    input { background-color: gainsboro; }
+    form p { margin: 0; margin-bottom: 0.2em; }
+    #id { font-family: monospace; }
+  </style>
+</head><body>
+
+<form action="none://" method="get">
+  <p>Base URL: <input type="text" id="baseurl" size="60"
+      value="https://i3.ytimg.com/vi/"
+      x-value="big_buck_bunny."
+      ></p>
+  <p>Video-ID: <input type="text" id="video_id" size="15"
+      value="aqz-KE-bpKQ">
+    <label><input type="checkbox" id="live"> livestream</label>
+    <input type="submit" value="Show thumbnails"></p>
+</form>
+
+<output id="thumbs"><script src="weboverview.js"></script></output>
+
+</body></html>
